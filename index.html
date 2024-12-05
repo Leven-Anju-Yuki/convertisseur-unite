@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur d'unités</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Convertisseur d'unités</h1>
+        <select id="unitType">
+            <option value="miles">Miles ➜ Kilomètres</option>
+            <option value="gallons">Gallons ➜ Litres</option>
+            <option value="pounds">Pounds ➜ Kilogrammes</option>
+            <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
+            <option value="inches">Pouces ➜ Centimètres</option>
+        </select>
+        <input type="number" id="value" placeholder="Entrez la valeur" />
+        <button onclick="convert()">Convertir</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

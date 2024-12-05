@@ -1,0 +1,94 @@
+/* Mise en page globale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+}
+
+/* Conteneur principal */
+.converter {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.converter:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre */
+.converter h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+/* Sélection et champ d'entrée */
+.converter select,
+.converter input {
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet au focus */
+.converter select:focus,
+.converter input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Bouton */
+.converter button {
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet bouton au survol */
+.converter button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Résultat */
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Adaptabilité mobile */
+@media (max-width: 768px) {
+    .converter h1 {
+        font-size: 1.5rem;
+    }
+    .converter {
+        padding: 20px;
+    }
+}
