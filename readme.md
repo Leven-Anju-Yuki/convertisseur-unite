@@ -64,13 +64,13 @@ Un aperçu élégant avec une mise en page centrée, des dégradés en arrière-
 
 ## 📌 Améliorations futures  
 - Ajout de conversions supplémentaires.  
-- Interface multilingue pour les utilisateurs non francophones.  
+- Interface multilingue pour les utilisateurs non francophones rajouter plus de langues.  
 - Système de gestion des erreurs plus intuitif.  
 
 ---
 
 ## 👨‍💻 Auteur  
-Créé par [Ton Prénom et Nom ou Pseudo].  
+Créé par Florie Decitre.  
 
 Tu peux me contacter pour toute suggestion ou amélioration. 😊  
 

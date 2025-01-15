@@ -1,25 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Balises Meta SEO -->
+    <meta
+      name="description"
+      content="Un outil pratique pour convertir les unités courantes comme miles, gallons, livres, et températures."
+    />
+    <meta
+      name="keywords"
+      content="convertisseur d'unités, miles en kilomètres, fahrenheit en celsius, pouces en centimètres"
+    />
+    <meta name="author" content="Votre Nom" />
+    <!-- Balises Meta Open Graph (OG) pour les réseaux sociaux -->
+    <meta property="og:title" content="Dragon - Univers Dreamworks" />
+    <meta
+      property="og:description"
+      content="Explorez l'univers captivant de Dreamworks et découvrez les histoires, personnages, et leçons de la saga des Dragons. Un espace interactif dédié aux fans."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leven-anju-yuki.github.io/convertisseur-unite/index.html" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dgrszi9wf/image/upload/v1705327179/convertisseur-unite/img/favicon.png"
+    />
+    <meta property="og:site_name" content="Dragon - Univers Dreamworks" />
+
     <title>Convertisseur d'unités</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <!-- Fichiers CSS pour le style du site -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <div class="converter">
-        <h1>Convertisseur d'unités</h1>
-        <select id="unitType">
-            <option value="miles">Miles ➜ Kilomètres</option>
-            <option value="gallons">Gallons ➜ Litres</option>
-            <option value="pounds">Pounds ➜ Kilogrammes</option>
-            <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
-            <option value="inches">Pouces ➜ Centimètres</option>
-        </select>
-        <input type="number" id="value" placeholder="Entrez la valeur" />
-        <button onclick="convert()">Convertir</button>
-        <div class="result" id="result"></div>
+      <h1 id="title">Convertisseur d'unités</h1>
+
+      <!-- Sélection de la langue -->
+      <select id="language" onchange="changeLanguage()">
+        <option value="fr"><img src="./assets/img/drapeau_langue/france.png" alt="Français" />Français</option>
+        <option value="en"><img src="./assets/img/drapeau_langue/anglais.png" alt="English" />English</option>
+        <option value="es"><img src="./assets/img/drapeau_langue/espagne.png" alt="Español" />Español</option>
+      </select>
+
+      <!-- Sélection du type d'unité -->
+      <select id="unitType">
+        <option value="miles">Miles ➜ Kilomètres</option>
+        <option value="kilometers">Kilomètres ➜ Miles</option>
+        <option value="gallons">Gallons ➜ Litres</option>
+        <option value="litres">Litres ➜ Gallons</option>
+        <option value="pounds">Pounds ➜ Kilogrammes</option>
+        <option value="kilograms">Kilogrammes ➜ Pounds</option>
+        <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
+        <option value="celsius">Celsius ➜ Fahrenheit</option>
+        <option value="inches">Pouces ➜ Centimètres</option>
+        <option value="centimeters">Centimètres ➜ Pouces</option>
+      </select>
+
+      <input type="number" id="value" placeholder="Entrez la valeur" />
+      <button onclick="convert()">Convertir</button>
+
+      <div class="result" id="result"></div>
+      <div class="error" id="error"></div>
     </div>
+
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
