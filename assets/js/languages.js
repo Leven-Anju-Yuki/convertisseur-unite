@@ -80,7 +80,7 @@ const translations = {
       document.getElementById("value").placeholder = elements.placeholder;
   
       // Mise à jour du texte du bouton de conversion
-      document.querySelector("button").innerText = elements.convertButton;
+      document.getElementById("convertButton").innerText = elements.convertButton;
   
       // Réinitialisation du message d'erreur (si affiché auparavant)
       document.getElementById("error").innerText = "";

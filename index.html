@@ -79,8 +79,10 @@
       </select>
 
       <input type="number" id="value" placeholder="Entrez la valeur" />
-      <button id="button" onclick="convert()">Convertir</button>
-
+      <div class="button-container">
+        <button id="convertButton" onclick="convert()">Convertir</button>
+        <button id="resetButton" onclick="resetPage()">Réinitialiser</button>
+      </div>
       <div class="result" id="result"></div>
       <div class="error" id="error"></div>
       <!-- Lien pour la conversion de monnaie -->
