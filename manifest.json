@@ -1,6 +1,6 @@
 {
-  "name": "Portfolio",
-  "short_name": "Portfolio",
+  "name": "Convertisseur d'unités",
+  "short_name": "Convertisseur d'unités",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
