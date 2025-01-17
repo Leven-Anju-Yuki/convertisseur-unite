@@ -22,13 +22,30 @@ Ce projet est une application web simple et élégante permettant de convertir d
 ## 📂 Structure du projet  
 
 ```graphql
-convertisseur-unites/  
-├── index.html             # Fichier HTML principal  
-├── assets/                # Dossier des ressources  
-│   ├── css/               # Dossier pour les fichiers CSS  
-│   │   ├── styles.css     # Feuille de style CSS  
-│   ├── js/                # Dossier pour les fichiers JavaScript  
-│       ├── script.js      # Fichier JavaScript pour les calculs  
+├── assets
+│   ├── css
+│   │   └── style.css             # Feuille de styles principale
+│   ├── img
+│   │   ├── drapeau_langue        # Dossier contenant les drapeaux des langues
+│   │   │   ├── allemand_rond.png
+│   │   │   ├── amerique_rond.png
+│   │   │   ├── anglais_rond.png
+│   │   │   ├── chine_rond.png
+│   │   │   ├── espagne_rond.png
+│   │   │   ├── france_rond.png
+│   │   │   ├── italie_rond.png
+│   │   │   ├── japon_rond.png
+│   │   │   └── portugais_rond.png
+│   │   └── favicon.png           # Icône du site
+│   └── js
+│       ├── installer.js          # Script pour l'installation ou PWA
+│       ├── languages.js          # Gestion des langues
+│       └── script.js             # Script principal
+├── index.html                    # Page principale du projet
+├── manifest.json                 # Configuration du PWA
+├── readme.md                     # Documentation du projet
+└── sw.js                         # Service worker
+
 ```  
 
 ---
