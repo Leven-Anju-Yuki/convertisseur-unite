@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <button class="btn-install ml-2" id="installButton" style="display: none">Installer</button>
     <!-- Sélection de la langue -->
     <div class="lang-selector">
       <img src="./assets/img/drapeau_langue/france_rond.png" alt="Français" class="flag" onclick="setLanguage('fr')" />
@@ -48,7 +47,7 @@
       <img src="./assets/img/drapeau_langue/chine_rond.png" alt="Chine" class="flag" onclick="setLanguage('zh')" />
       <img src="./assets/img/drapeau_langue/japon_rond.png" alt="Japon" class="flag" onclick="setLanguage('ja')" />
     </div>
-
+    <button class="btn-install ml-2" id="installButton" style="display: none">Installer</button>
     <div class="converter">
       <h1 id="title">Convertisseur d'unités</h1>
 
@@ -63,7 +62,7 @@
           <option value="meters">Mètres ➜ Pieds</option>
           <option value="feet">Pieds ➜ Mètres</option>
         </optgroup>
-      
+
         <!-- Groupe : Liquides -->
         <optgroup label="Liquides">
           <option value="gallons">Gallons ➜ Litres</option>
@@ -71,7 +70,7 @@
           <option value="liters">Litres ➜ Millilitres</option>
           <option value="milliliters">Millilitres ➜ Litres</option>
         </optgroup>
-      
+
         <!-- Groupe : Temps -->
         <optgroup label="Temps">
           <option value="hoursToDays">Heures ➜ Jours</option>
@@ -79,32 +78,31 @@
           <option value="hours">Heures ➜ Secondes</option>
           <option value="seconds">Secondes ➜ Heures</option>
         </optgroup>
-      
+
         <!-- Groupe : Poids -->
         <optgroup label="Poids">
           <option value="pounds">Pounds ➜ Kilogrammes</option>
           <option value="kilograms">Kilogrammes ➜ Pounds</option>
         </optgroup>
-      
+
         <!-- Groupe : Énergie -->
         <optgroup label="Énergie">
           <option value="kilojoules">Kilojoules ➜ Calories</option>
           <option value="calories">Calories ➜ Kilojoules</option>
         </optgroup>
-      
+
         <!-- Groupe : Surfaces -->
         <optgroup label="Surfaces">
           <option value="squareMeters">Mètres carrés ➜ Pieds carrés</option>
           <option value="squareFeet">Pieds carrés ➜ Mètres carrés</option>
         </optgroup>
-      
+
         <!-- Groupe : Températures -->
         <optgroup label="Températures">
           <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
           <option value="celsius">Celsius ➜ Fahrenheit</option>
         </optgroup>
       </select>
-      
 
       <input type="number" id="value" placeholder="Entrez la valeur" />
       <div class="button-container">
