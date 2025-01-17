@@ -54,29 +54,57 @@
 
       <!-- Sélection du type d'unité -->
       <select id="unitType">
-        <option value="miles">Miles ➜ Kilomètres</option>
-        <option value="kilometers">Kilomètres ➜ Miles</option>
-        <option value="gallons">Gallons ➜ Litres</option>
-        <option value="litres">Litres ➜ Gallons</option>
-        <option value="pounds">Pounds ➜ Kilogrammes</option>
-        <option value="kilograms">Kilogrammes ➜ Pounds</option>
-        <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
-        <option value="celsius">Celsius ➜ Fahrenheit</option>
-        <option value="inches">Pouces ➜ Centimètres</option>
-        <option value="centimeters">Centimètres ➜ Pouces</option>
-        <option value="meters">Mètres ➜ Pieds</option>
-        <option value="feet">Pieds ➜ Mètres</option>
-        <option value="kilojoules">Kilojoules ➜ Calories</option>
-        <option value="calories">Calories ➜ Kilojoules</option>
-        <option value="hoursToDays">Heures ➜ Jours</option>
-        <option value="daysToHours">Jours ➜ Heures</option>
-        <option value="hours">Heures ➜ Secondes</option>
-        <option value="seconds">Secondes ➜ Heures</option>
-        <option value="squareMeters">Mètres carrés ➜ Pieds carrés</option>
-        <option value="squareFeet">Pieds carrés ➜ Mètres carrés</option>
-        <option value="liters">Litres ➜ Millilitres</option>
-        <option value="milliliters">Millilitres ➜ Litres</option>
+        <!-- Groupe : Distances -->
+        <optgroup label="Distances">
+          <option value="miles">Miles ➜ Kilomètres</option>
+          <option value="kilometers">Kilomètres ➜ Miles</option>
+          <option value="inches">Pouces ➜ Centimètres</option>
+          <option value="centimeters">Centimètres ➜ Pouces</option>
+          <option value="meters">Mètres ➜ Pieds</option>
+          <option value="feet">Pieds ➜ Mètres</option>
+        </optgroup>
+      
+        <!-- Groupe : Liquides -->
+        <optgroup label="Liquides">
+          <option value="gallons">Gallons ➜ Litres</option>
+          <option value="litres">Litres ➜ Gallons</option>
+          <option value="liters">Litres ➜ Millilitres</option>
+          <option value="milliliters">Millilitres ➜ Litres</option>
+        </optgroup>
+      
+        <!-- Groupe : Temps -->
+        <optgroup label="Temps">
+          <option value="hoursToDays">Heures ➜ Jours</option>
+          <option value="daysToHours">Jours ➜ Heures</option>
+          <option value="hours">Heures ➜ Secondes</option>
+          <option value="seconds">Secondes ➜ Heures</option>
+        </optgroup>
+      
+        <!-- Groupe : Poids -->
+        <optgroup label="Poids">
+          <option value="pounds">Pounds ➜ Kilogrammes</option>
+          <option value="kilograms">Kilogrammes ➜ Pounds</option>
+        </optgroup>
+      
+        <!-- Groupe : Énergie -->
+        <optgroup label="Énergie">
+          <option value="kilojoules">Kilojoules ➜ Calories</option>
+          <option value="calories">Calories ➜ Kilojoules</option>
+        </optgroup>
+      
+        <!-- Groupe : Surfaces -->
+        <optgroup label="Surfaces">
+          <option value="squareMeters">Mètres carrés ➜ Pieds carrés</option>
+          <option value="squareFeet">Pieds carrés ➜ Mètres carrés</option>
+        </optgroup>
+      
+        <!-- Groupe : Températures -->
+        <optgroup label="Températures">
+          <option value="fahrenheit">Fahrenheit ➜ Celsius</option>
+          <option value="celsius">Celsius ➜ Fahrenheit</option>
+        </optgroup>
       </select>
+      
 
       <input type="number" id="value" placeholder="Entrez la valeur" />
       <div class="button-container">

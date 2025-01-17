@@ -97,7 +97,15 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
+#value {
+  width: 220px; /* Même largeur que les boutons */
+  padding: 10px; /* Uniformiser l'espacement interne */
+  font-size: 16px; /* Taille du texte */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Coins arrondis */
+  margin-bottom: 10px; /* Espacement en dessous */
+  text-align: center; /* Centrer le texte */
+}
 /* Effet bouton au survol */
 .converter button:hover {
   background-color: #0056b3;
